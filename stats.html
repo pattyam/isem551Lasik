@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#navigation-container-left{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:530px;
+    width:270px;
+    float:left;
+    padding:5px;	      
+}
+#centersection {
+    width:900px;
+    float:left;
+	height:530px;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 
+   }
+</style>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Dr. Gerald B. Walman', 'Dr. Anuradha Paturi','Dr.Christopher'],
+          ['2011', 150, 100,70],
+          ['2012', 180, 105,80],
+          ['2013', 220, 140,110],
+          ['2014', 280, 180,160]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Walman Hospital Patients Chart',
+            subtitle: 'LASIK Surgeries implemented in the year: 2011-2014',
+          },
+          bars: 'Vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+
+<div id="header">
+<h1>LASIK</h1>
+</div>
+
+<div id="navigation-container-left">
+<ul id="main-navigation">
+<li class="primary first"><a href="lasik_info.html"><span>What is LASIK</span></a></li>
+<li class="primary"><a href="pain_laser_t.html"><span>Common Questions</span></a></li>
+<li class="primary"><a href="technology.html"><span>Technology</span></a></li>
+<li class="primary"><a href="hospital.html"><span>LASIK Speciality Hospital</span></a></li>
+<li class="primary"><a href="doctor.html"><span>Meet Our Doctors</span></a></li>
+<li class="primary"><a href="cost.html"><span>Cost/Financing for LASIK</span></a></li>
+<li class="primary"><a href="stats.html"><span>Statistics</span></a></li>
+</div>
+<div id="centersection">
+<h2>Hospital Statistics</h2>
+<table>
+<tr>
+<td>
+ <div id="barchart_material" style="width: 830px; height: 470px;"></div>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</div>
+<div id="footer">
+Copyright © ARS.com
+</div>
+
+</body>
+</html>

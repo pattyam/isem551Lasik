@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#navigation-container-left{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:530px;
+    width:270px;
+    float:left;
+    padding:5px;	      
+}
+#centersection {
+    width:900px;
+    float:left;
+	height:530px;
+    padding:10px;	 	 
+}
+#centerright {
+    width:100px;
+    float:left;
+	height:530px;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 
+   }
+form {
+        text-align: left;
+    }
+input {
+    float:left;
+    clear:both;
+}
+
+function myFunction() {
+    var myWindow = window.open("", "MsgWindow", "width=200, height=100");
+    myWindow.document.write("<p>Message Sent!!</p>");
+	}
+	
+</style>
+
+</head>
+<body>
+
+<div id="header">
+<h1>LASIK</h1>
+</div>
+
+<div id="navigation-container-left">
+<ul id="main-navigation">
+<li class="primary first"><a href="lasik_info.html"><span>What is LASIK</span></a></li>
+<li class="primary"><a href="pain_laser_t.html"><span>Common Questions</span></a></li>
+<li class="primary"><a href="technology.html"><span>Technology</span></a></li>
+<li class="primary"><a href="hospital.html"><span>LASIK Speciality Hospital</span></a></li>
+<li class="primary"><a href="doctor.html"><span>Meet Our Doctors</span></a></li>
+<li class="primary"><a href="cost.html"><span>Cost/Financing for LASIK</span></a></li>
+<li class="primary"><a href="stats.html"><span>Statistics</span></a></li>
+</div>
+
+
+<div id="centersection">
+<h2>Cost/Financing for LASIK</h2>
+<table>
+<tr>
+<h2>What is the cost of Laser Refractive Surgery?</h2>
+</tr><tr>
+The costs of the procedure can only be discussed after you and Dr. Walman have determined the extent of treatment. Financing is available through Care Credit patient financing.
+</tr>
+<tr>
+<h2>Patient Financing</h2>
+</tr><tr>
+LASIK2020 / Walman Eye Center offers patients the option to finance their procedure, through Care Credit Financing. Patient financing was created for people who don't want to tie up their traditional credit sources with medical debt or those who simply can't afford to pay out-of-pocket healthcare charges atone time. It's no longer necessary to delay a surgical procedure that you really want, nor worry about the inability to pay for treatment. Care Credit allows you to make low monthly payments over an extended period of time. Contact either our Sun City or Phoenix laser vision center to learn more about LASIK and patient financing.
+</tr>
+</table>
+</div>
+<table>
+<tr>
+<td>
+<h2> Contact us:</h2>
+<div id="centerright">
+<form  id="quick-contact" method="post" novalidate="novalidate">
+						<label for="contact_name">*Name</label><br>
+						<input id="contact_name" name="contact_name" type="text" required="required"><br>
+						<label for="contact_email">*Email</label><br>
+						<input class="input" id="contact_email" name="contact_email" type="email" required="required"><br>
+						<label for="contact_phone">*Phone</label><br>
+						<input class="input" id="contact_phone" name="contact_phone" type="text"><br>
+						<label for="contact_message">*Message</label><br>
+						<textarea class="input" cols="15" id="contact_message" name="contact_message" rows="8"></textarea><br>
+						<input type="hidden" value="Form_1003338_20101020141044" name="formname"><br>
+						<input class="button" name="commit" type="submit" value="Submit" onclick="myFunction()">
+					<input type="hidden" name="referrer_url" value="https://www.google.com/"></form>
+</td>
+</tr>
+</table>
+</div>
+<div id="footer">
+Copyright © ARS.com
+</div>
+
+</body>
+</html>
