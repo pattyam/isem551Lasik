@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="InfoPage" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="sandeep">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style>
 #header {
     background-color:black;
@@ -22,75 +30,125 @@
 	height:530px;
     padding:10px;	 	 
 }
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
 #footer {
     background-color:black;
     color:white;
     clear:both;
     text-align:center;
-   padding:5px;	 
-   }
+    padding:5px;
+    width: 100%;
+}
 </style>
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div> class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img alt="LASIK improved vision" class="img-right" name="LASIK improved vision" src="LASIK1.jpg" title="LASIK improved vision" width="110px" />
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"style="width: 95%">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="primary first"><a href="lasik_info.html"><span>What is LASIK</span></a></li>
+                <li class="primary"><a href="pain_laser_t.html"><span>Common Questions</span></a></li>
+                <li class="primary"><a href="hospital.html"><span>LASIK Speciality Hospital</span></a></li>
+                <li class="primary"><a href="doctor.html"><span>Meet Our Doctors</span></a></li>
+                <li class="primary"><a href="stats.html"><span>Statistics </span></a></li>
 
-<div id="header">
-<h1>LASIK Speciality Hospital</h1>
-</div>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<div id="navigation-container-left">
-<ul id="main-navigation">
-<li class="primary first"><a href="lasik_info.html"><span>What is LASIK</span></a></li>
-<li class="primary"><a href="pain_laser_t.html"><span>Common Questions</span></a></li>
-<li class="primary"><a href="technology.html"><span>Technology</span></a></li>
-<li class="primary"><a href="hospital.html"><span>LASIK Speciality Hospital</span></a></li>
-<li class="primary"><a href="doctor.html"><span>Meet Our Doctors</span></a></li>
-<li class="primary"><a href="cost.html"><span>Cost/Financing for LASIK</span></a></li>
-<li class="primary"><a href="stats.html"><span>Statistics</span></a></li>
-</div>
+<!-- Page Content -->
+<div class="container">
 
 
-<div id="centersection">
-<h2>Walman Eye Center</h2>
-<p><img alt="LASIK improved vision" class="img-right" name="LASIK improved vision" src="walman.png" title="LASIK improved vision" />
-<table>
-<tr>
-<td>
-<h2>Locations</h2>
-<h3>Phoenix Office:</h3>
-<a href="https://www.google.com/maps/place/2020+N+Central+Ave+%231100,+Phoenix,+AZ+85004/@33.4701155,-112.0748658,17z/data=!3m1!4b1!4m2!3m1!1s0x872b12417e096ed7:0x2529dfa1c787a716" target="_blank">
-<img alt="LASIK improved vision" class="img-right" src="markerA.png"style="float:left;" />
-<strong>2020 N Central Ave, Ste 1100</strong><br>
-<strong>Phoenix, AZ 85004. </strong>
-<strong>Phone:(602) 222-2020</strong><br>
-</a>
-<br>
-<br>
-<h3>Sun City Office:</h3>
-<a href ="https://www.google.com/maps/place/10615+W+Thunderbird+Blvd,+Sun+City,+AZ+85351/@33.6048075,-112.2881279,17z/data=!3m1!4b1!4m2!3m1!1s0x872b43b2934caae3:0xc0f2b478e09267e2" target="_blank">
-<img alt="LASIK improved vision" class="img-right" src="markerB.png" style="float:left;" />
-<strong> 10615 W Thunderbird Blvd, Ste D180</strong><br>
-<strong>Sun City, AZ 85351. </strong>
-<strong>Phone:(623) 236-1999</strong><br>
-</a>
-</td>
-<td>
-<a href = "https://www.google.com/maps/dir/Walman+Eye+Center,+2020+North+Central+Avenue+%231100,+Phoenix,+AZ+85004/10615+W+Thunderbird+Blvd,+Sun+City,+AZ+85351/@33.5332911,-112.2556841,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x872b12417e096ed7:0xd7e2e197d231ce1d!2m2!1d-112.074821!2d33.470242!1m5!1m1!1s0x872b43b2934caae3:0xc0f2b478e09267e2!2m2!1d-112.2881279!2d33.6048075" target="_blank">
-<img alt="LASIK improved vision" class="img-right" name="map" src="map.png" style="width:500px;height:330px"/>
-</a>
-</td>
-</tr>
-</table>
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                Walman Eye Center
+            </h1>
+            <img alt="LASIK improved vision" class="img-right" name="LASIK improved vision" src="walman.png" title="LASIK improved vision" />
+        </div>
 
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</div>
-<div id="footer">
-Copyright © 551HU Project
-</div>
+            <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><i class="fa fa-fw fa-check"></i> Location: </h2>
+                        </div>
+                        <div class="panel-body">
+                            <h3>Phoenix Office:</h3>
+                            <a href="https://www.google.com/maps/place/2020+N+Central+Ave+%231100,+Phoenix,+AZ+85004/@33.4701155,-112.0748658,17z/data=!3m1!4b1!4m2!3m1!1s0x872b12417e096ed7:0x2529dfa1c787a716" target="_blank">
+                                <img alt="LASIK improved vision" class="img-right" src="markerA.png"style="float:left;" />
+                                <strong>2020 N Central Ave, Ste 1100</strong><br>
+                                <strong>Phoenix, AZ 85004. </strong>
+                                <strong>Phone:(602) 222-2020</strong><br>
+                            </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+        <div class="col-md-8">
+            <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+        </div>
+            <div class="col-md-8">
+                <h3>Send us a Message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Full Name:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email Address:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+                </form>
+            </div>
+
+
+        <footer>
+            <div class="row"></div>
+            <div class="row">
+                <div id="footer">
+                    <p>Copyright &copy; HU 551 Project</p>
+                </div>
+
+            </div>
+        </footer>
 
 </body>
 </html>
